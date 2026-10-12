@@ -22,13 +22,13 @@ Instead of forcing a specialist to manually inspect thousands of slides, SOVIC r
 ### ⚙️ System Architecture & Tech Stack
 
 #### 🖥️ Edge Computing & GUI (`Raspberry Pi 5`)
-* **Core Unit:** Raspberry Pi 5 (8GB RAM) with a 7" touchscreen.
-* **Software Stack:** Developed in Python (`Tkinter` + `OpenCV` + `TensorFlow`), optimized with multi-threading and graph compilation caching.
-* **Biological Pre-filters:** Evaluates sharpness (Laplacian variance) and cellular content (HSV masks and Otsu thresholding) before running inference, discarding empty or blurry fields automatically.
+- **Core Unit:** Raspberry Pi 5 (8GB RAM) with a 7" touchscreen.
+- **Software Stack:** Developed in Python (`Tkinter` + `OpenCV` + `TensorFlow`), optimized with multi-threading and graph compilation caching.
+- **Biological Pre-filters:** Evaluates sharpness (Laplacian variance) and cellular content (HSV masks and Otsu thresholding) before running inference, discarding empty or blurry fields automatically.
 
 #### 🦾 Mechatronics & Hardware Control (`ESP32-C3 Mini`)
-* **Microcontroller:** ESP32-C3 Mini managing precise step execution via serial USB communication (`/dev/ttyACM0`).
-* **Motion System:** Dual NEMA 17 stepper motors for the Y-axis (with follower synchronization) and X-axis motion, navigated via an analog joystick override or automated scanning loops.
+- **Microcontroller:** ESP32-C3 Mini managing precise step execution via serial USB communication (`/dev/ttyACM0`).
+- **Motion System:** Dual NEMA 17 stepper motors for the Y-axis (with follower synchronization) and X-axis motion, navigated via an analog joystick override or automated scanning loops.
 
 ---
 
@@ -48,13 +48,13 @@ En lugar de modificar los microscopios tradicionales o requerir costosos equipos
 ### ⚙️ Arquitectura del Sistema y Componentes
 
 #### 🖥️ Interfaz y Procesamiento (`Raspberry Pi 5`)
-* **Hardware:** Raspberry Pi 5 (8GB de RAM) con pantalla táctil de 7 pulgadas.
-* **Software:** Aplicación de escritorio desarrollada en Python (`Tkinter` + `OpenCV` + `TensorFlow`), optimizada con manejo de hilos y precalentamiento de grafos para evitar latencias.
-* **Pre-filtros biológicos:** El sistema evalúa la nitidez (Varianza de Laplaciano) y el contenido celular (máscaras HSV y umbralización de Otsu) antes de correr la inferencia, evitando analizar campos vacíos o con tejido apelmazado.
+- **Hardware:** Raspberry Pi 5 (8GB de RAM) con pantalla táctil de 7 pulgadas.
+- **Software:** Aplicación de escritorio desarrollada en Python (`Tkinter` + `OpenCV` + `TensorFlow`), optimizada con manejo de hilos y precalentamiento de grafos para evitar latencias.
+- **Pre-filtros biológicos:** El sistema evalúa la nitidez (Varianza de Laplaciano) y el contenido celular (máscaras HSV y umbralización de Otsu) antes de correr la inferencia, evitando analizar campos vacíos o con tejido apelmazado.
 
 #### 🦾 Control Mecatrónico (`ESP32-C3 Mini`)
-* **Microcontrolador:** ESP32-C3 Mini encargado de la ejecución de pasos mediante comunicación serial USB (`/dev/ttyACM0`).
-* **Tracción:** Motores NEMA 17 controlados por hardware para el desplazamiento en ejes X/Y (con sincronización de motores gemelos en Y), permitiendo control manual por joystick o rutas automatizadas en rejilla.
+- **Microcontrolador:** ESP32-C3 Mini encargado de la ejecución de pasos mediante comunicación serial USB (`/dev/ttyACM0`).
+- **Tracción:** Motores NEMA 17 controlados por hardware para el desplazamiento en ejes X/Y (con sincronización de motores gemelos en Y), permitiendo control manual por joystick o rutas automatizadas en rejilla.
 
 ---
 
@@ -62,14 +62,10 @@ En lugar de modificar los microscopios tradicionales o requerir costosos equipos
 
 ### Physical Mounting / Montaje Físico sobre el Microscopio
 <p align="center">
-  <img src="assets/Sovic_Montado.jpg" width="85%" alt="SOVIC Mounted on Microscope">
+  <img src="assets/SOVIC_montado_1.jpeg" width="48%" alt="Side view">
+  <img src="assets/SOVIC_montado_2.jpeg" width="48%" alt="Screen detail and connections">
 </p>
 <p align="center"><em>Mechatronic integration: motors coupled to microscope knobs, universal camera, and Raspberry Pi 5 in operation. / Integración mecatrónica: motores acoplados a las perillas, cámara universal y Raspberry Pi 5 en operación.</em></p>
-
-<p align="center">
-  <img src="assets/SOVIC_montado_1.jpg" width="48%" alt="Side view">
-  <img src="assets/SOVIC_montado_2.jpg" width="48%" alt="Screen detail and connections">
-</p>
 
 ---
 

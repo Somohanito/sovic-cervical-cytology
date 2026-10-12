@@ -93,15 +93,3 @@ En lugar de modificar los microscopios tradicionales o requerir costosos equipos
   </p>
 
 ---
-
-## 📂 Repository Structure / Estructura del Repositorio
-
-```text
-sovic-cervical-cytology/
-├── assets/                  # Hardware photos, UI screenshots and figures
-├── gui/
-│   └── SOVIC_INTERFAZZZ.py     # Main GUI script and serial control interface
-├── src/
-│   └── pipeline_demostrasion.py # Preprocessing module (Reinhard & Safe Crop)
-├── .gitignore               # Security filters (blocks weights, datasets & local runs)
-└── README.md

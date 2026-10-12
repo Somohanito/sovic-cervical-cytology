@@ -1,0 +1,20 @@
+ # Python y entornos virtuales
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# Pesos de modelos, resultados y carpetas de entrenamiento
+*.pkl
+*.h5
+*.weights
+*.pth
+run_*/
+capturas/
+escaneos/
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db

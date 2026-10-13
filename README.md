@@ -94,5 +94,24 @@ El sistema replica de forma no invasiva la destreza y capacidad analítica human
 
 ---
 
+## Clinical Validation & Performance / Validación Clínica y Desempeño
+
+To measure real-world operational efficacy, SOVIC was evaluated against a blind trial dataset of **700 Pap smear samples** compared with expert pathological ground truth.
+
+*Para medir la eficacia operativa en entornos reales, SOVIC fue evaluado frente a un conjunto de prueba ciego de **700 muestras de Papanicolaou** contrastadas con el estándar de referencia histopatológico.*
+
+### Performance Metrics (700-Sample Trial) / Métricas de Desempeño
+
+| Metric / Métrica | Value / Valor | Clinical Significance / Significado Clínico |
+| :--- | :---: | :--- |
+| **Accuracy / Exactitud Global** | **89.00%** | Overall concordance with pathological standard (623/700 correct). / Coincidencia general con el estándar patológico. |
+| **Sensitivity / Sensibilidad** | **96.01%** | Critical for triage: minimizes false negatives on lesion samples (LSIL/HSIL). / Crucial en triaje: minimiza falsos negativos en lesiones. |
+| **Specificity / Especificidad** | **76.31%** | Correct negative sample isolation (NILM/NLM). / Correcta segregación de muestras negativas. |
+| **Precision (PPV) / Valor Predictivo** | **88.01%** | Reliability of positive lesion predictions. / Confiabilidad de predicciones positivas. |
+
+* **Key Takeaway / Conclusión clave:** High sensitivity (**96.01%**) ensures that potential pre-cancerous or malignant lesions are reliably caught during automated triage, drastically reducing the risk of missed diagnoses in primary care workflows. / La alta sensibilidad asegura que las lesiones potenciales sean detectadas de forma confiable durante el triaje automatizado, reduciendo drásticamente el riesgo de diagnósticos omitidos.
+
+---
+
 ## Author & Developer / Autor y Desarrollador
-* **Ing. Axel Daniel Somohano Maldonado** — *Mechatronics, Embedded Systems, Hardware & Software Architecture*
+- **Ing. Axel Daniel Somohano Maldonado** — *Mechatronics, Embedded Systems, Hardware & Software Architecture*
